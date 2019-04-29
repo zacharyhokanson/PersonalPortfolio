@@ -2,13 +2,44 @@
 @import url('https://fonts.googleapis.com/css?family=Volkhov');
 :root{
   font-family: 'Montserrat', sans-serif; 
-  --bgGrey: #3e4244;
+  --bgGrey: #2b3341;
   --electricBlue: #66c0ec;
   --accentRed: #B36E6E;
 
   --stark: #e7dfdd;
 
+  /* --seaBlue: #00e0c7;
+  --softBlue: #009394;
+  --sunsetBlue: #006270;
+  --deepBlue: #2a3950;
+
+  --iceberg: #a1c5da;
+  --water: #125772;
+  --shadow: #3c526c;
+  --sky: #cbcdd9; */
+
+  --deepBlue: #161821;
+  --midnight: #1e2132;
+  --softBlue: #6b7089;
+  --frozen: #c6c8d1;
+  --forest: #3f5e5a;
 }
+
+.deepBlue{
+  background-color: var(--deepBlue);
+}
+.midnight{
+  background-color: var(--midnight);
+}.softBlue{
+  background-color: var(--softBlue);
+}.frozen{
+  background-color: var(--frozen);
+}.forest{
+  background-color: var(--forest);
+}
+
+
+
 a{
   text-decoration: none;
   margin: 0;
@@ -17,17 +48,17 @@ a{
   height: 100%;
 }
 a:link {
-    color: var(--electricBlue);
+    color: var(--deepBlue);
 }
 a:visited {
-    color: var(--electricBlue);
+    color: var(--deepBlue);
 }
 
 body{
   margin: 0;
   padding: 0;
-  background: var(--bgGrey);
-  color: var(--electricBlue);
+  background: white;
+  color: black;
 
 }
 
@@ -51,7 +82,7 @@ body{
 }
 
 .button:hover ~ .bottomBorder{
-  border-bottom: 2px solid var(--accentRed);
+  border-bottom: 2px solid var(--forest);
 }
 
 
@@ -95,7 +126,7 @@ body{
 
 .subName{
   font-family: 'Barlow Condensed', sans-serif;
-  color: white;
+  color: var(--deepBlue);
   margin: 0;
   
   
@@ -103,7 +134,7 @@ body{
 
 .titleBreak{
   width: 100%;
-  border: 2px solid var(--accentRed);
+  border: 2px solid var(--forest);
 }
 
 .titleText{
