@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Monster Select Cards</title>
+    <link href = "./css/monsterstyle.css" rel = "stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+      <div class = 'navbar-end'>
+
+          <div class = 'navItem'>
+              <div class = 'button ' id = 'buttonFont'>
+                  <a href = 'index.html'><p>Home</p></a>
+              </div>
+              <div class = 'bottomBorder'>
+              </div>
+          </div>
+  
+          <div class = 'navItem'>
+              <div class = 'button' id = 'buttonFont'>
+                  <a href = 'JSProjects.html'><p>Projects</p></a>
+              </div>
+              <div class = 'bottomBorder'>
+              </div>
+          </div>
+          <div class = 'navItem'>
+  
+              <div class = 'button' id = 'buttonFont'>
+                  <a href = 'about.html'><p>About</p></a>
+              </div>
+              <div class = 'bottomBorder'>
+              </div>
+          </div>
+  
+          </div>
+    <div class = 'pageWrapper'>
+
+      <div class = 'columns is-centered'>
+      <h1 class = 'title' id = 'myFont'>MONSTERS</h1>
+      </div>
+
+      <div class = 'columns is-centered mainContainer'> <!-- Overall container-->
+        
+        <div class = 'columns'>
+
+          <div class = 'column  is-two-fifths select is-multiple'> <!-- MONSTER DROPDOWN MENU -->
+            <select multiple size = 10 class = 'monsterMenu'>
+
+            </select>
+          </div>
+        
+
+        <div class = 'column'>
+          <div class = 'flipCardContainer'>
+            <div class = 'flipCard'>
+
+              <div class = 'flipCardFront'>
+                  <div class = 'card'> 
+                      <div class = 'card-image'>
+                        <div class = 'imageContainer'>
+                          <img src = '/img/monsters/Monster Placeholder.jpg' class = 'monsterPic column'>
+                        </div>
+                      </div>
+                      <div class = 'card-content'>
+                          <p class = 'has-text-centered monsterName'>~~~~~~~~~</p>
+                      </div>
+                    </div>
+              </div>
+
+              <div class = 'flipCardBack'>
+                  <div class = 'card'> 
+                      <div class = 'card-content'>
+                          <p class = 'has-text-centered monsterStats'>Pokemon Name 2</p>
+                      </div>
+                    </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+        
+        
+    </div>
+  </div>
+  </body>
+    <script type = "module" src = "./js/monstercode.js"></script><!-- type  = "module" is important!! -->
+</html>
+

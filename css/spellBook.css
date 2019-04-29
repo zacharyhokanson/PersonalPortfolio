@@ -1,0 +1,162 @@
+:root{
+  font-family: 'Montserrat', sans-serif; 
+  --bgGrey: #3e4244;
+  --electricBlue: #66c0ec;
+  --accentRed: #B36E6E;
+  }
+/* /////////////////// */
+/* /MODIFIER CLASSES/ */
+/* ///////////////// */
+.centerText{
+  text-align: center;
+}
+
+.margin5{
+  margin: 5px;
+}
+
+.red{
+  background: red;
+}
+
+.blue{
+  background: blue;
+}
+
+.green{
+  background: green;
+}
+
+.orange{
+  background: orange;
+}
+
+.yellow{
+  background: yellow;
+}
+
+.black{
+  background: black;
+}
+
+.pink{
+  background: pink;
+}
+
+.purple{
+  background: purple;
+}
+
+/* /////////////////// */
+/* ///PAGE CLASSES/// */
+/* ///////////////// */
+.pageWrapper{
+    background: gray;
+  }
+.buttonBar{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.button{
+  border-radius: 5px;
+}
+.button:hover{
+  color: var(--accentRed);
+}
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head{
+  font-size: 48px;
+  margin: 10px;
+}
+
+.subHead{
+  font-size: 18px;
+  margin: 10px;
+}
+
+.headText{
+  font-weight: bold;
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.cardsContainer{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+/* /////////////////// */
+/* ///CARD CLASSES/// */
+/* ///////////////// */
+.card{
+  border: 3px solid black;
+  background: lightgray;
+  background-image: url('../img/Artboard.png');
+  color: white;
+  margin: 10px;
+  width: 350px;
+  height: 409px;
+  overflow: hidden;
+}
+
+
+.cardHeader{
+  margin: 5px;
+  color: black;
+}
+
+.cardContent{
+  margin: 24px;
+}
+
+
+/* //////////////////// */
+/* /ANIMATION CLASSES/ */
+/* ////////////////// */
+.headAnimation{
+  position: relative;
+  bottom: 57px;
+  transition: 0.35s;
+  z-index: 3;
+}
+
+.contentAnimation{
+  position: relative;
+  bottom: 10px;
+  transition: 0.35s;
+  z-index: 3;
+  
+}
+
+.bodyFade{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.35s;
+}
+
+
+
+.isRaised{
+  transform: translateY(-340px);
+}
+
+.isVisible{
+  opacity: 1;
+}
+
+.isOpaque{
+  opacity: .3;
+}
+
+
+

@@ -1,0 +1,74 @@
+:root{
+    font-family: 'Montserrat', sans-serif; 
+    --bgGrey: #3e4244;
+    --electricBlue: #66c0ec;
+    --accentRed: #B36E6E;
+  
+  }
+.header{
+    display: flex;
+    justify-content: center;
+}
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+  
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    margin: 10px;
+    padding: 5px;
+    /* border-radius: 5px; */
+    max-height: 300px;
+    flex-basis: 450px;
+
+
+    
+}
+
+.cardTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.cardContent{
+    display: flex;
+}
+
+.cardImg{
+    object-fit: contain;
+    /* border: 1px solid black; */
+    /* border-radius: 3px; */
+    /* padding: 5px; */
+    background: white;
+}
+
+
+.cardText{
+    padding-left: 10px;
+}
+
+/* CHANGES CLASSES TO WORK BETTER WITH SMALL SCREENS */
+@media(max-width: 950px){ 
+    .header{
+        text-align: center;
+      }
+    .cardContainer{
+        justify-content: center;
+    }
+    .cardTitle{
+        align-self: center;
+    }
+    .cardContent{
+        flex-direction: column;
+    }
+    .cardImg{
+        align-self: center;
+    }
+    .card{
+        max-height: 400px;
+    }
+}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Volkhov');
+:root{
+  font-family: 'Montserrat', sans-serif; 
+  --bgGrey: #3e4244;
+  --electricBlue: #66c0ec;
+  --accentRed: #B36E6E;
+
+  --stark: #e7dfdd;
+
+}
+a{
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+a:link {
+    color: var(--electricBlue);
+}
+a:visited {
+    color: var(--electricBlue);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: var(--bgGrey);
+  color: var(--electricBlue);
+
+}
+
+
+.button{
+  min-width: 5rem;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 0px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.bottomBorder{
+  position: relative;
+  border-bottom: 2px solid white;
+  width:50%;
+  bottom: 15px;
+}
+
+.button:hover ~ .bottomBorder{
+  border-bottom: 2px solid var(--accentRed);
+}
+
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  min-height: 10vh;
+}
+
+.navItem{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcomeSection{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height:88vh;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid black; */
+  
+}
+
+.myName{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+  text-align: center;
+  font-family: 'Volkhov', serif;
+  /* font-weight: bold; */
+  
+}
+.myName h1{
+  margin: 0;
+  font-weight: normal;
+}
+
+.subName{
+  font-family: 'Barlow Condensed', sans-serif;
+  color: white;
+  margin: 0;
+  
+  
+}
+
+.titleBreak{
+  width: 100%;
+  border: 2px solid var(--accentRed);
+}
+
+.titleText{
+  font-size: 72px;
+  margin: 0;
+}
+
+.pageWrapper{
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  /* border: 1px solid black; */
+  /* height: 100vh; */
+}
+.containerBox{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* justify-content: center; */
+  /* border: 1px solid green; */
+  width: 90vw;
+  max-width: 1900px;
+
+}
+.subBox{
+  display:flex;
+  flex-wrap: wrap;
+  flex: 1;
+  
+  /* border: 1px solid purple; */
+}
+.box1{
+  height: 700px;
+  /* border: 1px solid blue; */
+  flex-grow: 1;
+  flex-basis: 250px;
+  /* background-color: #66c0ec; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+.lift:hover{
+  /* box-shadow: 5px 10px 0px grey; */
+  /* transform: rotateX(12deg) */
+  transform: scale(1.01)
+}
+
+.box2{
+  height: 550px;
+  /* border: 1px solid blue; */
+  flex-grow: 1;
+  flex-basis: 250px;
+  /* background-color: #66c0ec; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.box3{
+  height: 550px;
+  /* border: 1px solid blue; */
+  flex-grow: .3;
+  flex-basis: 250px;
+  /* background-color: #66c0ec; */
+  display: flex;
+  justify-content: center;
+
+}
+.box4{
+  height: 550px;
+  padding-left: 10px;
+  /* border: 1px solid blue; */
+  flex-grow: 1;
+  flex-basis: 250px;
+  /* background-color: #66c0ec; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+
+}
+
+
+.imgBox{
+  display: flex;
+  align-items: center;
+  align-self: center;
+  /* border: 1px solid black; */
+  flex: .5;
+  
+}
+
+.iconText{
+  /* border: solid 1px black; */
+  font-size: 24px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+}
+
+#aboutMe{
+  margin-top: 45px;
+}
+.blue{
+  background-color: var(--electricBlue)
+}
+
+.red{
+  background-color: var(--accentRed)
+}
+
+.pink{
+  background-color: palevioletred;
+}
+
+.black{
+  background-color: black;
+}
+.grey{
+  background-color: var(--bgGrey)
+}
+.textWhite{
+  color: white;
+}
+
+.img1{
+  background-image: url(../img/indexIcons/photographyIcon.jpg);
+  /* height: 1500px;
+  width: 1500px; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-position-x: -100px;
+
+  
+  /* background-position-y: -10px; */
+}
+
+.imgFit{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  
+}
+
+@media(max-width: 450px){
+  .navbar{
+    justify-content: center;
+  }
+  .titleBreak{
+    width: 50%;
+  }
+
+  .titleText{
+    font-size: 60px;
+  }
+}
+
+@media(max-width: 1100px){
+  .img1{
+    background-position: center;
+  }
+}
