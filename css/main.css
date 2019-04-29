@@ -38,7 +38,13 @@
   background-color: var(--forest);
 }
 
-
+.colorCard{
+  display: flex;
+  height: 70vh;
+  width: 100vw;
+  justify-content: center;
+  background-color: var(--frozen);
+}
 
 a{
   text-decoration: none;
@@ -101,6 +107,7 @@ body{
 .welcomeSection{
   display: flex;
   justify-content: center;
+  align-content: center;
   flex-wrap: wrap;
   min-height:88vh;
   margin: 0;
@@ -140,6 +147,7 @@ body{
 .titleText{
   font-size: 72px;
   margin: 0;
+  background-color: white;
 }
 
 .pageWrapper{
@@ -148,6 +156,7 @@ body{
   width: 90vw;
   margin: 0 auto;
   margin-bottom: 10px;
+  background-color: var(--frozen);
   /* border: 1px solid black; */
   /* height: 100vh; */
 }
