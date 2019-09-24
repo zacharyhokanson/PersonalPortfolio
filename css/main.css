@@ -290,6 +290,7 @@ body{
 .imgFit{
   height: 100%;
   width: 100%;
+  /* border: 1px blue solid; */
   object-fit: contain;
   
 }
