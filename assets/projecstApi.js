@@ -27,6 +27,15 @@ export const projects = [
     },
 
     {
+        "name": "Dice Roller",
+        "link": "dice.html",
+        "target": "_self",
+        "image": "",
+        "text": `A simple dice rolling script.`,
+        "type": "JavaScript"
+    },
+
+    {
         "name": "The Mindfull Student",
         "link": "https://10768841.wixsite.com/themindfulstudent",
         "target": "_blank",
